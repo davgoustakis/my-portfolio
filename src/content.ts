@@ -36,8 +36,8 @@ export const profile: Profile = {
     'I build web and mobile products with React, React Native and TypeScript. From telecom e-shops and self-care apps to banking tools and my own side projects, I care about fast, accessible interfaces and the small details that make them feel alive.',
   email: 'davgoustakis.io@gmail.com',
   links: [
-    { label: 'GitHub', href: 'https://github.com/dimitris-avgoustakis' },
-    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/your-handle' },
+    { label: 'GitHub', href: 'https://github.com/davgoustakis' },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/dimitris-avgoustakis' },
   ],
 };
 

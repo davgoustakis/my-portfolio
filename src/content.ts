@@ -34,10 +34,9 @@ export const profile: Profile = {
   ],
   about:
     'I build web and mobile products with React, React Native and TypeScript. From telecom e-shops and self-care apps to banking tools and my own side projects, I care about fast, accessible interfaces and the small details that make them feel alive.',
-  // TODO: replace these placeholders with your real contact details.
-  email: 'hello@example.com',
+  email: 'davgoustakis.io@gmail.com',
   links: [
-    { label: 'GitHub', href: 'https://github.com/your-username' },
+    { label: 'GitHub', href: 'https://github.com/dimitris-avgoustakis' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/your-handle' },
   ],
 };
@@ -66,6 +65,13 @@ export const projects: Project[] = [
     blurb:
       'A private expense tracker for iPhone. Imports bank statements (Excel, CSV, PDF), analyses spending by month and year, and keeps everything on-device in an encrypted vault behind Face ID.',
     stack: ['React Native', 'Expo', 'AES-256-GCM'],
+  },
+  {
+    name: 'Bank mobile & web app',
+    kind: 'Client · Web · iOS & Android',
+    blurb:
+      'Self-care app for a bank operator: account management, store locator with clustered maps, documents, video and banking functionalities',
+    stack: ['React Native', 'React', 'TypeScript', 'Reanimated', 'Maps'],
   },
   {
     name: 'Telecom mobile app',
@@ -97,16 +103,9 @@ export const projects: Project[] = [
   },
   {
     name: 'Clothes e-shop',
-    kind: 'Personal · E-commerce',
+    kind: 'Client · E-commerce',
     blurb:
       "Women's clothing shop for the Greek market on a tuned WooCommerce stack with a custom block theme and a fully Dockerised local setup.",
     stack: ['WordPress', 'WooCommerce', 'PHP 8.4', 'Redis', 'Nginx'],
-  },
-  {
-    name: 'Mobile proxy',
-    kind: 'Tooling · Node.js',
-    blurb:
-      'A local proxy and mock server that lets web and mobile apps share one backend entry point during development.',
-    stack: ['Node.js', 'Express', 'http-proxy'],
   },
 ];

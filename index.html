@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dimitris Avgoustakis — Developer</title>
+    <meta name="description" content="Dimitris Avgoustakis — frontend and mobile developer building web and mobile products with React, React Native and TypeScript." />
+    <meta name="theme-color" content="#07080a" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307080a'/%3E%3Ctext x='10' y='44' font-family='monospace' font-size='34' font-weight='700' fill='%239eff6e'%3E%3E_%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="boot" aria-hidden="true"><pre id="boot-log"></pre></div>
+
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"><span></span></div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="progress" aria-hidden="true"></div>
+
+    <header class="nav">
+      <a class="logo magnetic" href="#hero">da<span class="blink">_</span></a>
+      <nav>
+        <a href="#about"><i>01</i> about</a>
+        <a href="#work"><i>02</i> work</a>
+        <a href="#terminal"><i>03</i> terminal</a>
+        <a href="#contact"><i>04</i> contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <canvas id="field" aria-hidden="true"></canvas>
+        <div class="hero-inner">
+          <p class="prompt hero-fade"><span class="dim">~</span> $ whoami</p>
+          <h1 id="name">
+            <span class="line" data-split></span>
+            <span class="line accent-line" data-split></span>
+          </h1>
+          <p class="role hero-fade">&gt; <span id="typed"></span><span class="caret"></span></p>
+        </div>
+        <a class="scroll-hint hero-fade" href="#about">scroll <span class="arrow">↓</span></a>
+      </section>
+
+      <section class="marquee" aria-hidden="true">
+        <div class="marquee-track" id="marquee"></div>
+      </section>
+
+      <section id="about" class="section">
+        <p class="label reveal">// 01 — about</p>
+        <p class="about-text" id="about-text"></p>
+        <ul class="skill-grid" id="skill-grid"></ul>
+      </section>
+
+      <section id="work">
+        <div class="work-head">
+          <p class="label">// 02 — work</p>
+          <h2 class="title" data-split data-title>Selected projects</h2>
+          <p class="work-cmd"><span class="dim">~/projects</span> $ ls -la <span class="count" id="work-count"></span></p>
+        </div>
+        <div class="work-track" id="work-track"></div>
+      </section>
+
+      <section id="terminal" class="section">
+        <p class="label reveal">// 03 — terminal</p>
+        <h2 class="title" data-split data-title>Go on, type something</h2>
+        <div class="term reveal" id="term">
+          <div class="term-bar">
+            <span></span><span></span><span></span>
+            <em>visitor@da: ~</em>
+          </div>
+          <div class="term-body" id="term-body" data-lenis-prevent>
+            <div id="term-out" aria-live="polite"></div>
+            <form id="term-form" autocomplete="off">
+              <label for="term-in">visitor@da:~$</label>
+              <input id="term-in" type="text" spellcheck="false" autocapitalize="off" aria-label="Terminal input" />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <p class="label reveal">// 04 — contact</p>
+        <h2 class="mega" data-split data-title>Let's build something</h2>
+        <a class="cta magnetic reveal" id="mail" href="#"><span>say hello</span> →</a>
+        <ul class="links reveal" id="links"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <span>© <span id="year"></span> Dimitris Avgoustakis</span>
+      <span class="dim">built with vite + gsap · exit code 0</span>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
